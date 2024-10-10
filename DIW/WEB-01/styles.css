@@ -17,6 +17,7 @@ body {
     left: 0;
     width: 100%;
     background-color: #5c5c5c;
+    tramsition: all 0.3s ease;
   }
   
   nav ul {
@@ -31,9 +32,15 @@ body {
     margin-right: 20px;
   }
   
+  nav a:hover {
+    color: #c2c2c2;
+    
+  }
+
   nav a {
     color: #ffffff;
-    text-decoration: solid 100px;
+    text-decoration: none;
+    font-weight: bold;
   }
   
   main {
@@ -78,4 +85,10 @@ body {
   
   .producto p {
     margin-bottom: 20px;
+  }
+
+  .noticia img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
   }

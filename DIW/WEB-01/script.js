@@ -52,8 +52,49 @@ const productos = [
       listaProductos.appendChild(elemento);
     });
   }
-  
+
+  // datos de noticias
+  const noticias = [
+    {
+      id: 1,
+      titulo: "Ableton Move, una groovebox portable hermanada con Live",
+      imagen: "imagenes/move.jqg.avif",
+      contenido: "Lejos de Push 3, Move es una forma asequible de disponer de un bien concebido entorno para generar ideas 'electro' en cualquier lugar, usando percusión, sintes VA y wavetable y sampler. Permite una experiencia muy estilo 'Live' a pequeña escala y en portabilidad extrema. Su conexión con Live (exportación de proyectos y uso como controlador Live) facilita ir más allá, sea con Live Intro incluido o alguna otra licencia"
+    },
+    {
+      id:2,
+      titulo: "Noticia 2",
+      imagen: "noticias/noticia2.jpg",
+      contenido: "Contenido de la noticia 2"
+    },
+    {
+      id:3,
+      titulo: "Noticia 3",
+      imagen: "noticias/noticia3.jpg",
+      contenido: "Contenido de la noticia 3"  
+    }
+  ];
+
+  // función para agregar noticias a la lista
+  function agregarNoticias() {  
+    const listaNoticias = document.getElementById("lista-noticias");
+    noticias.forEach((noticia) => {
+      const elemento = document.createElement("li");
+      elemento.classList.add("noticia");
+      elemento.innerHTML = `
+        <img src="${noticia.imagen}" alt="${noticia.titulo}">
+        <h3>${noticia.titulo}</h3>
+        <p>${noticia.contenido}</p>
+      `;
+      listaNoticias.appendChild(elemento);
+    });
+  }   
+
   // agregar productos a la lista
   agregarProductos();
-  console.log("hola");
+
+  // agregar noticias a la lista
+  agregarNoticias();
+
+  console.log("test");
   
