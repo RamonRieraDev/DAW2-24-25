@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2</title>
+</head>
+<body>
+    
+    <form action="/encuesta.php" method="post" target="blank" autocomplete="off"></form>
+
+    <h1>Formulario de Inscripción</h1>
+
+    Rellena el siguiente formulario de inscripción.
+
+    <fieldset>
+
+    <legend>Datos personales</legend>
+
+    <label for="nombre">Nombre</label><br>
+    <input type="text" name="nombre" id="nombre"><br><br>
+
+    <label for="apellidos">Apellidos</label><br>
+    <input type="text" name="apellidos" id="apellidos"><br><br>
+
+    <label for="fecha_nacimiento">Fecha de nacimiento</label><br>
+    <input type="date" name="fecha_nacimiento" id="fecha_nacimiento"><br><br>
+
+    Estado civil<br>
+    <input type="radio" name="estado_civil" id="soltero" checked>
+    <label for="soltero">Soltero</label><br>
+    <input type="radio" name="estado_civil" id="casado">
+    <label for="casado">Casado</label><br><br>
+
+    <label for="direccion">Dirección</label><br>
+    <input type="text" name="direccion" id="direccion"><br><br>
+
+    <label for="isla">Isla</label><br>
+    <select name="isla" id="isla">Isla
+    <option value="mallorca">Mallorca</option>
+    <option value="menorca">Menorca</option>
+    <option value="ibiza">Ibiza</option>
+    <option value="formentera">Formentera</option>
+    </select><br><br>
+
+    <label for="color_preferido">Color preferido</label><br>
+    <input type="color" id="color" name="color"><br><br>
+
+    </fieldset>
+
+    <fieldset>
+
+        <legend>Contacto</legend>
+
+        <label for="email">Correo electrónico</label><br>
+        <input type="text" name="email" id="email"><br><br>
+
+        
+
+    </fieldset>
+</body>
+</html>

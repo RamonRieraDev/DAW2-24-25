@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 12</title>
+    <style>
+        .error {
+            color: red;
+            font-size: 0.6rem;
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <h1>Validación de formularios</h1>
+        <form action="http://example.com/" onsubmit="return validar()">
+            <label for="nombre">Nombre</label><br>
+            <input type="text" name="nombre" id="nombre"><span class="error">*Obligatorio</span><br><br>
+            <label for="apellidos">Apellidos</label><br>
+            <input type="text" name="apellidos" id="apellidos"><span class="error">*Obligatorio</span><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+        <script>
+            "use strict"
+            function validar() {
+                console.log("hola")
+                let nombre = document.getElementById("nombre").value;
+                let apellidos = document.getElementById("apellidos").value;
+
+                if (nombre.length == 0 || apellidos.length == 0) {
+                    for (let elemento of document.getElementsByClassName("error")) {
+                        elemento.style.visibility = "visible";
+                    }
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </body>
+</body>
+
+</html>

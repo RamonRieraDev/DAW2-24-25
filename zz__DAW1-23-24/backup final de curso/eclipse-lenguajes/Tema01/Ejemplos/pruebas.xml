@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prueba xlmns:c="ramon.es"
+	xlmns:t="ramon.es/tarde">
+<![CDATA[...]]>
+<!-- ... -->
+&lt;
+&gt;
+&apos;
+&quot;
+&amp;
+	<c:cliente cargo="alumno saxo">Ramon</c:cliente>
+	<c:cliente alumno="si" saxo="si">Ramon</c:cliente>
+	<c:cliente cargo="alumno saxo tarde">Ramon</c:cliente>
+</prueba>

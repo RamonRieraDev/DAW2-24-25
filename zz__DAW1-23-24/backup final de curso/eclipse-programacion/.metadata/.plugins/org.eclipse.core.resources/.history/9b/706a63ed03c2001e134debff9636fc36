@@ -1,0 +1,13 @@
+package práctica3A;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		String mensajeError = "¡Tu edad debe ser un número entero!";
+		
+		Consola.leerInt(mensajeError);
+
+	}
+
+}

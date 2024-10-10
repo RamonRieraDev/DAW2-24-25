@@ -1,0 +1,41 @@
+package hoja02;
+
+import java.util.Scanner;
+
+public class Ejer23 {
+
+	public static void main(String[] args) {
+
+		Scanner entrada = new Scanner(System.in);
+
+		
+
+		int nota = entrada.nextInt();
+
+			for (int i = 0; i <= 5; i++) {
+				
+				System.out.println("Ingrese las notas: ");
+
+				if (nota < 5) 
+					System.out.println("Insuficiente.");
+				
+				if (nota == 6) {
+					System.out.println("Bien.");
+				}
+				if (nota == 7 || nota == 8) {
+					System.out.println("Notable.");
+				}		
+				if (nota == 9) {
+					System.out.println("Excelente.");
+				}
+				if (nota == 10) {
+					System.out.println("Sobresaliente.");
+				}	
+					
+			}
+
+		}
+
+	}
+
+

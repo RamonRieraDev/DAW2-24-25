@@ -1,0 +1,4 @@
+<!ELEMENT workers (worker+)>
+<!ELEMENT worker (#PCDATA)>
+	<!ATTLIST worker id ID #REQUIRED>
+	<!ATTLIST worker isBoss >

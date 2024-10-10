@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 07</title>
+    <style>
+        label{
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        input{
+            margin-bottom: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Eventos onfocus y onfocusOut</h1>
+
+    <form action="" method="get">
+
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Usuario">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Contraseña">
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+    <script>
+        "use strict"
+        
+        // Creamos unas variables que apunten a los inputs de usuario y password.
+        // Para no estar repitiendo siempre lo de document.getElementById("...").
+        let usuario = document.getElementById("usuario");
+        let password = document.getElementById("password");
+
+        // Añadimos dos listeners al input usuario para que se llame a la función resaltar().
+        // Cuando el usuario hace focus en el input, se llama a la función resaltar().
+        // Cuando el usuario sale del input, se llama a la función blanquear().
+        usuario.addEventListener('focus', function(){resaltar(usuario)});
+        usuario.addEventListener('focusout', function(){blanquear(usuario)});
+
+        password.addEventListener('focus', function(){resaltar(password)});
+        password.addEventListener('focusout', function(){blanquear(password)});
+
+        function resaltar(elemento){
+            elemento.style.backgroundColor="palegreen";
+        }
+
+        function blanquear(elemento){
+            elemento.style.backgroundColor="white";
+        }
+    </script>
+</body>
+</html>

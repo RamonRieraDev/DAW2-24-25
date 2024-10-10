@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- CORRECCIÓN: -->
+
+<horario xmlns="https://iessonferrer.net/horarios">
+	<lunes>
+		<clase>FOL</clase>
+		<clase>FOL</clase>
+		<clase>SI</clase>
+		<clase>SI</clase>
+		<clase>BD</clase>
+		<clase>BD</clase>
+	</lunes>
+	
+	<martes>
+		<clase>FOL</clase>
+		<clase>FOL</clase>
+		<clase>SI</clase>
+		<clase>SI</clase>
+		<clase>BD</clase>
+		<clase>BD</clase>
+	</martes>
+	
+	<miercoles>
+		<clase>FOL</clase>
+		<clase>FOL</clase>
+		<clase>SI</clase>
+		<clase>SI</clase>
+		<clase>BD</clase>
+		<clase>BD</clase>
+	</miercoles>
+</horario>

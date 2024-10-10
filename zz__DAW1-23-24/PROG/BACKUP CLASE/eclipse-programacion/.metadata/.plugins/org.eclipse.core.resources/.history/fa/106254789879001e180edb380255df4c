@@ -1,0 +1,17 @@
+package hoja02;
+
+import java.util.Scanner;
+
+public class Ejer16 {
+
+	public static void main(String[] args) {
+		
+		// Scanner = new Scanner(System.in);
+		
+		double numAle = (int)(10 * Math.random() + 1);
+		
+		System.out.println(numAle);
+
+	}
+
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hotel SYSTEM "practica1PrimeraEvaluacion.dtd">
+<hotel>
+	<nombre>Hotel Son Ferrer</nombre>
+	<direccion>C/ Loro, 9, Son Ferrer, 07181 Calvià, Islas
+		Baleares</direccion>
+	<tel>555 19 87 88</tel>
+	<fax>555 19 87 88</fax>
+	<web>www.hotelsonferrer.com</web>
+	<reserva fecha_entrada="2023-11-01" fecha_salida="2023-11-08">
+		<pension_completa />
+		<cliente dni="DNI10200200T">
+			<nombre>Eva</nombre>
+			<apellidos>Duque Marcos</apellidos>
+			<edad>40</edad>
+		</cliente>
+	</reserva>
+	<reserva fecha_entrada="2023-11-01" fecha_salida="2023-11-05">
+		<cliente dni="DNI32100201H">
+			<nombre>Benigno</nombre>
+			<apellidos>Singh Tena</apellidos>
+			<edad>28</edad>
+		</cliente>
+	</reserva>
+	<reserva fecha_entrada="2023-11-02">
+		<pension_completa />
+		<cliente dni="DNI44100200J">
+			<nombre>Estrella</nombre>
+			<apellidos>Bermúdez Rojo</apellidos>
+			<edad>33</edad>
+		</cliente>
+	</reserva>
+</hotel>

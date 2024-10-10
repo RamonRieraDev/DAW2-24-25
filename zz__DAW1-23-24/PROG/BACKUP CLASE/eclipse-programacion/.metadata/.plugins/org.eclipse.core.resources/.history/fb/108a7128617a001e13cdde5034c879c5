@@ -1,0 +1,22 @@
+package ejemplosBucles;
+
+import java.util.Scanner;
+
+public class Ejer18 {
+
+	public static void main(String[] args) {
+
+		Scanner in = new Scanner(System.in);
+		
+		int res = 3;
+		
+		for(int i = 1; res < 500; i++) {
+			
+			res = res * 3;
+			System.out.println(res);
+			
+		}
+
+	}
+
+}

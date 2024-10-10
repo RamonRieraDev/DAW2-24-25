@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 09</title>
+    <style>
+        label {
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        input {
+            margin-bottom: 10px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Eventos onchange</h1>
+
+    <form action="" method="get">
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Usuario">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Contraseña">
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+    <script>
+        "use strict"
+
+        let usuario = document.getElementById("usuario");
+
+        // Al cambiar el contenido del input usuario, se ejecuta la función verificar()
+        // que comprobará que el nombre de usuario tenga, al menos, 5 caracteres.
+
+        usuario.addEventListener('change', verificar);
+
+        function verificar() {
+            if (usuario.value.length >= 5) {
+                usuario.style.border = "2px solid green";
+            } else {
+                usuario.style.border = "2px solid red";
+            }
+        }
+    </script>
+</body>
+
+</html>

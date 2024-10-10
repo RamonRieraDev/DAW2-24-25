@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="connexions_ADSL">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="oferta" maxOccurs="unbounded"/>
+                <xs:element ref="ofertes_actives" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="oferta">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nom" />
+                <xs:element ref="nom_companyia" />
+                <xs:element ref="fibra" minOccurs="0"/>
+                <xs:element ref="velocitat_transferencia" />
+                <xs:element ref="preu" />
+            </xs:sequence>
+            <xs:attribute ref="id" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="ofertes_actives" type="xs:string" />
+    
+    <xs:attribute name="id" type="xs:positiveInteger" />
+    
+    <xs:element name="nom" type="xs:string"/>
+
+    <xs:element name="nom_companyia" type="xs:string" />
+
+    <xs:element name="velocitat_transferencia">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="pujada" />
+                <xs:element ref="baixada" />
+            </xs:sequence>
+            <xs:attribute ref="unitat">
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:attribute name="unitat">
+        <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Kbps" />
+                        <xs:enumeration value="Mbps" />
+                        <xs:enumeration value="Gbps" />
+                    </xs:restriction>
+                </xs:simpleType>
+    </xs:attribute>
+
+    <xs:element name="pujada" type="xs:decimal" />
+
+    <xs:element name="baixada" type="xs:decimal" />
+
+    <xs:element name="preu">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="alta" />
+                <xs:element ref="linia" />
+                <xs:element ref="promocio" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element ref="mensual" />
+                <xs:element ref="total_mensual" />
+                <xs:element ref="extres" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute ref="moneda" />
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:attribute name="moneda" type="xs:string" fixed="Euro"/>
+
+    <xs:element name="alta">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="permanencia_alta" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute ref="gratis" />
+            <xs:attribute ref="permanencia" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="permanencia_alta">
+        <xs:complexType>
+            <xs:attribute ref="temps" />
+            <xs:attribute ref="quantitat" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:attribute name="temps" type="xs:string" />
+
+    <xs:attribute name="quantitat" type="xs:positiveInteger" />
+
+    <xs:attribute name="gratis" type="xs:string" />
+
+    <xs:attribute name="permanencia" type="xs:string" />
+
+    <xs:element name="linia">
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:fractionDigits value="2" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="mensual">
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:fractionDigits value="2" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="total_mensual" type="xs:decimal" />
+
+    <xs:element name="fibra">
+        <xs:complexType />
+    </xs:element>
+
+    <xs:element name="promocio">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="promocio_preu" />
+            </xs:sequence>
+            <xs:attribute ref="fins" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:attribute name="fins" type="xs:date"/>
+
+    <xs:element name="promocio_preu" type="xs:decimal" />
+
+    <xs:element name="extres" type="xs:string" />
+
+</xs:schema>

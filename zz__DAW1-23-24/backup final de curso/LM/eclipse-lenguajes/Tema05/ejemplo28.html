@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 28</title>
+    <style>
+        .contenedor-flex {
+            border: 2px solid brown;
+            display: flex;
+            flex-direction: row;
+            max-width: 800px;
+        }
+
+        .item-flex {
+            border: 2px solid greenyellow;
+            font-size: 5rem;
+            text-align: center;
+            padding: 20px;
+            flex-basis: 100px;
+        }
+
+        .item-flex:first-child {
+            flex-basis: 100px;
+        }
+
+        .item-flex:nth-child(2) {
+            flex-grow: 3;
+
+        }
+
+        h2 {
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox</h1>
+
+    <div class="contenedor-flex">
+        <div class="item-flex">
+            1
+        </div>
+        <div class="item-flex">
+            2
+        </div>
+        <div class="item-flex">
+            3
+        </div>
+    </div>
+</body>
+
+</html>

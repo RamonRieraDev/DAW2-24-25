@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Movie DB</title>
+</head>
+<style>
+    #contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #cartelera {
+        background-color: rgb(243, 243, 243);
+        max-width: 800px;
+        margin: auto;
+        padding: auto;
+    }
+
+    h1 {
+        color: rgb(167, 157, 157);
+        font-weight: 100;
+        letter-spacing: 3px;
+    }
+
+    #verCartelera {
+        border-radius: 10px;
+        background-color: rgb(167, 157, 157);
+        color: white;
+        width: 700px;
+        height: 40px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #buscaCartelera {
+        background-color: rgb(140, 228, 13);
+        width: 100px;
+        height: 40px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        border: none;
+    }
+
+    .pelicula {
+        margin-bottom: 20px;
+        border: none;
+        padding: 10px;
+    }
+
+    #tituloPelicula {
+        border-radius: 10px;
+        background-color: rgb(204, 194, 194);
+        letter-spacing: 2px;
+        font-weight: 100;
+        color: rgb(70, 70, 70);
+        width: 700px;
+        height: 60px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        max-width: 250px;
+    }
+
+    #sinopsisPelicula {
+        border-radius: 10px;
+        background-color: rgb(176, 168, 168);
+        color: white;
+        width: 700px;
+        height: auto;
+        margin-top: 10px;
+        padding: 10px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* ¡ESTO LO HICE PARA PRACTICAR!
+    #fechaPelicula {
+        border-radius: 10px;
+        background-color: rgb(167, 157, 157);
+        color: white;
+        width: 700px;
+        height: auto;
+        margin: auto;
+        padding: 10px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+</style>
+</head>
+
+<body>
+<div id="contenedor">
+    <div id="cartelera">
+        <h1>The Movie Database</h1>
+        <div id="verCartelera">
+            <p>
+                Pulsa para ver la cartelera en los cines de EEUU
+            </p>
+        </div>
+        <button id="buscaCartelera" onclick="buscarCartelera()">Buscar</button>
+    </div>
+</div>
+    <script>
+        const options = {
+            method: 'GET',
+            headers: {
+                accept: 'application/json',
+                Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlYjI4YTY1NjE1YjExNzYwNGVjNGM0ODcxYzMwNjk0MyIsInN1YiI6IjY2NGRmYzdiYzg2NTFmZDE0YjQyOTFlOCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.ymUjINBpEC0yj-aN7fHW0Ei-HvEAQc9NJhPKymGj50k'}
+        };
+
+        function buscarCartelera() {
+            // Prueba del botón "Buscar"
+            console.log("El botón funciona");
+
+            // Solicitud a la API y ver el .json para los títulos, imágenes, sinopsis, fechas de estrenos...
+            fetch('https://api.themoviedb.org/3/movie/now_playing?&language=es-ES&page=1', options)
+                .then(response => response.json())
+                .then(response => {
+                    carteleraDiv = document.getElementById("cartelera");
+
+                    // Foreach de películas y crear un div para cada una
+                    response.results.forEach(pelicula => {
+                        peliculaDiv = document.createElement("div");
+                        peliculaDiv.classList.add("pelicula");
+
+                        // Título de la película
+                        titulo = document.createElement("h2");
+                        titulo.id = "tituloPelicula";
+                        titulo.textContent = pelicula.title;
+                        peliculaDiv.appendChild(titulo);
+
+                        // Imagen de la película
+                        imagen = document.createElement("img");
+                        imagen.src = `https://www.themoviedb.org/t/p/w1280${pelicula.poster_path}`;
+                        imagen.alt = pelicula.title;
+                        peliculaDiv.appendChild(imagen);
+
+                        // Sinopsis de la película
+                        sinopsis = document.createElement("p");
+                        sinopsis.id = "sinopsisPelicula";
+                        sinopsis.textContent = pelicula.overview;
+                        peliculaDiv.appendChild(sinopsis);
+                        carteleraDiv.appendChild(peliculaDiv);
+
+                        // // Fecha estreno de la película(!ESTO LO HICE PARA PRACTICAR!)
+                        // fechaPelicula = document.createElement("p");
+                        // fechaPelicula.id = "fechaPelicula";
+                        // fechaPelicula.textContent = "FECHA DE ESTRENO: " + pelicula.release_date;
+                        // peliculaDiv.appendChild(fechaPelicula);
+                    });
+                })
+                .catch(err => console.error(err));
+        }
+    </script>
+</body>
+
+</html>

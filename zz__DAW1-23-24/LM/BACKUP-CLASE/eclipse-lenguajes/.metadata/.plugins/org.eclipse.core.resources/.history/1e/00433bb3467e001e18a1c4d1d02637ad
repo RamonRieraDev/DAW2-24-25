@@ -1,0 +1,11 @@
+<!ELEMENT Course_Catalog (Department)>
+
+<!ELEMENT Department (Title, Chair, Course, )>
+
+<!ELEMENT Title>
+
+<!ELEMENT Chair (Professor, )>
+
+<!ELEMENT Professor ()>
+
+<!ELEMENT First_Name ANY></!>

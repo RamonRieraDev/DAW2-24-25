@@ -1,0 +1,21 @@
+package ejemplosBucles;
+
+public class Ejemplo15 {
+
+	public static void main(String[] args) {
+
+		// Programa que muestre los números que sean múltiplos de 5 pero no de 50
+		// hasta el 200.
+		
+		int i = 5;
+		
+		while(i <= 200) {
+			
+			System.out.println(i);
+			i = i + 5;
+			
+		}
+
+	}
+
+}

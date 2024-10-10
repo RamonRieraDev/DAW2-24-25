@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 04</title>
+    <style>
+        #color_elegido{
+            width: 200px;
+            height: 100px;
+            background-color: green;
+            border: 3px solid yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selecciona un color</h1>
+
+    <p>
+        Elije un color, y se aplicará al rectángulo de abajo:
+    </p>
+
+        <select name="colores" id="colores" onchange="cambiar_color(this)">
+            <option value="green" >Verde</option>
+            <option value="purple">Púrpura</option>
+            <option value="yellow">Amarillo</option>
+            <option value="red">Rojo</option>
+            <option value="blue">Azul</option>
+        </select>
+
+    <p>
+        Color elegido:
+    </p>
+
+    <div>
+        <p id="color_elegido"></p>
+    </div>
+
+    <script>
+        "use strict"
+
+        window.addEventListener("load", resetear)
+
+        function cambiar_color(x) {
+            document.getElementById("color_elegido").style.backgroundColor = x.value;
+            }
+
+        function resetear(){
+            document.getElementById("colores").value = "green";
+            document.getElementById("color_elegido").style.backgroundColor = "green";
+        }
+    </script>
+</body>
+</html>

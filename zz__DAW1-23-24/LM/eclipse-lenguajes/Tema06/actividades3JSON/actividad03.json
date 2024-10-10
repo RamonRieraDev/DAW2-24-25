@@ -1,0 +1,17 @@
+{
+    "familia": [
+        {
+            "padre": "Martínez Chicote",
+            "madre": "Isabel",
+            "edad": 40,
+            "hijos": [
+                {
+                    "hijo": [
+                        "Manuel ",
+                        "Natalia"
+                    ]
+                }
+            ]
+        }
+    ]
+}

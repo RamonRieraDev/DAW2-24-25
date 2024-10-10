@@ -1,0 +1,49 @@
+package ejemplos;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.Iterator;
+
+public class Ejemplo03 {
+
+	public static void main(String[] args) {
+
+		String url = "jdbc:mysql://localhost/inversiones";
+		String usuario = "java";
+		String password = "Ageofempires2";
+		
+		addEmpresas(url, usuario, password);
+
+	}
+
+	private static void addEmpresas(String url, String usuario, String password) {
+
+		String[][] empresas = { { "1", "Navantia", "2005", }, { "2", "Red Eléctrica Española", "1985" },
+				{ "3", "Indra", "1992" } };
+
+		String sql = "insert into empresas values (?, ?, ?)";
+
+		try (Connection conexion = DriverManager.getConnection(url, usuario, password);
+				PreparedStatement preparedStatement = conexion.prepareStatement(sql)) {
+
+			for (int i = 0; i < empresas.length; i++) {
+				preparedStatement.setInt(1, Integer.parseInt(empresas[i][0]));
+				preparedStatement.setString(2, empresas[i][1]);
+				preparedStatement.setString(3, empresas[i][2]);
+			}
+
+			int registrosIntroducidos = preparedStatement.executeUpdate();
+
+			System.out.println(registrosIntroducidos);
+
+//		} catch () {
+//			System.out.println("");
+
+		} catch (SQLException e) {
+			System.out.println("Error al insertar datos.");
+			e.printStackTrace();
+		}
+	}
+}

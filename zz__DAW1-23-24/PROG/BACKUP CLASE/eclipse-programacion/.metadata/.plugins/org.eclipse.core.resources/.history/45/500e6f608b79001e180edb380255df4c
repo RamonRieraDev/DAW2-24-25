@@ -1,0 +1,31 @@
+package hoja02;
+
+import java.util.Scanner;
+
+public class Ejer09 {
+
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Ingrese el primer número de la división: ");
+		
+		int num1 = entrada.nextInt();
+		
+		System.out.println("Ingrese el segundo número de la división: ");
+		
+		int num2 = entrada.nextInt();
+		
+		int cont = 1;
+		
+		while (num1 % num2 >= num1 || num1 % num2 >= num2) {
+			
+			int res = 0;
+			
+			num1 - num2  res;
+			
+		}
+
+	}
+
+}

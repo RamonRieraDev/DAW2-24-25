@@ -1,0 +1,34 @@
+{
+    "catalogo": [
+        {
+            "descripcion": "Samsung Galaxy A32",
+            "precio": 239,
+            "memoriaInterna": 128,
+            "memoriaRam": 4,
+            "incluye": [
+                "Cargador",
+                "auriculares"
+            ]
+        },
+        {
+            "descripcion": "Samsung Galaxy A32",
+            "precio": 239,
+            "memoriaInterna": 128,
+            "memoriaRam": 4,
+            "incluye": [
+                "Cargador",
+                "auriculares"
+            ]
+        },
+        {
+            "descripcion": "Samsung Galaxy A32",
+            "precio": 239,
+            "memoriaInterna": 128,
+            "memoriaRam": 4,
+            "incluye": [
+                "Cargador",
+                "auriculares"
+            ]
+        }
+    ]
+}

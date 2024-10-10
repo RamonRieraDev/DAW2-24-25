@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03</title>
+</head>
+
+<body>
+
+    <script>
+        let textoJson = {
+            "familia": {
+                "padre": "pedro",
+                "madre": "maria",
+                "hijos": [
+                    "jesus",
+                    "juan"
+                ],
+                "primos": "abundio",
+                "tios": "abelarda"
+            }
+        };
+
+        console.log(textoJson);
+
+        let coche = {
+            matricula: 2000,
+            marca: "ford",
+            año: 2003
+
+        }
+
+        let textoCoche = JSON.stringify(coche);
+
+        console.log(coche);
+    </script>
+</body>
+
+</html>

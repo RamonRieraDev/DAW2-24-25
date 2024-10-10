@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACtividad 02</title>
+    <style>
+        button {
+            width: 150px;
+            height: 40px;
+            margin-left: 20px;
+            border: none;
+        }
+
+        #wikipedia {
+            background-color: rgb(158, 187, 253);
+        }
+
+        #greenpeace {
+            background-color: rgb(177, 253, 161);
+        }
+
+        #cruzroja {
+            background-color: rgb(253, 167, 159);
+        }
+
+        #link {
+            background-color: rgb(255, 251, 162);
+            display: inline-block;
+            padding: 15px 70px;
+            margin-left: 20px;
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Elegir destino del enlace</h1>
+
+    <p>Pulsa uno de estos tres colores para elegir el destino del link que aparece más abajo.</p>
+
+    <div class="enlace">
+
+        <button id="wikipedia">Wikipedia</button>
+
+        <button id="greenpeace">Greenpeace</button>
+
+        <button id="cruzroja">Cruz Roja</button>
+
+        <p>Pulsa el siguiente link para dirigirte a la web elegida:</p>
+
+        <a id="link" name="Ir a Wikipedia" target="_blank">Ir a Wikipedia</a>
+
+    </div>
+    <script>
+        "use strict"
+
+        let wikipedia = document.getElementById("wikipedia");
+        let greenpeace = document.getElementById("greenpeace");
+        let cruzroja = document.getElementById("cruzroja");
+        let link = document.getElementById("link");
+
+        wikipedia.addEventListener('click', cambiarLinkWP);
+        greenpeace.addEventListener('click', cambiarLinkGP);
+        cruzroja.addEventListener('click', cambiarLinkCR);
+
+        function cambiarLinkWP() {
+            link.innerText = "Ir a Wikipedia";
+            link.href = "https://es.wikipedia.org/";
+        }
+
+        function cambiarLinkGP() {
+            link.innerText = "Ir a Greepeace";
+            link.href = "https://www.greenpeace.org/es/";
+        }
+
+        function cambiarLinkCR() {
+            link.innerText = "Ir a Cruz Roja";
+            link.href = "https://www.cruzroja.es/";
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+{
+    "biblioteca":[
+        {
+            "libro":[
+                {
+                    "titulo": "Nuestro amigo común",
+                    "autor": "Charles Dickens"
+                },
+                {
+                    "titulo": "El sabueso de los Baskerville",
+                    "autor": "Arthur Conan Doyle"
+                }
+            ]
+        }
+    ]
+}

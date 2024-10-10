@@ -1,0 +1,1 @@
+<!ELEMENT diario (nombre+, entrada, fecha, festivo, contenido)>

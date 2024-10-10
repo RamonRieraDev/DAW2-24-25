@@ -1,0 +1,34 @@
+package ejemplosBucles;
+
+import java.util.Scanner;
+
+public class Ejemplo13 {
+
+	public static void main(String[] args) {
+
+	// Programa que calcule el resto de una división entre enteros con el 
+	// procedimiento de ir restando repetidamente el divisor del dividendo 
+	// hasta que el resultado es menor que el divisor.
+	
+	Scanner entrada = new Scanner(System.in);
+	
+	System.out.println("Introduzca el dividendo: ");
+	int dividendo = entrada.nextInt();
+	
+	System.out.println("Introduzca el divisor: ");
+	int divisor = entrada.nextInt();
+	
+	int res = 0;
+	
+	boolean seguirPreguntando = true;
+	
+	while(dividendo >= res) {
+		
+		res = dividendo - divisor;
+		System.out.println(dividendo "");
+		seguirPreguntando = false;
+	}
+	
+	}
+
+}

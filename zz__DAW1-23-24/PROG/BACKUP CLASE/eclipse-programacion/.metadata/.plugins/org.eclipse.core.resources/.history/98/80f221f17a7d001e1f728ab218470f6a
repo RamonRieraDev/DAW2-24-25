@@ -1,0 +1,25 @@
+package ejemplosBucles;
+
+import java.util.Scanner;
+
+public class Ejemplo11 {
+
+	public static void main(String[] args) {
+
+		// Aplicación que pregunte al usuario un número entre 1 y 5. 
+		// Si responde "3", se le felicitará por haber acertado. 
+		// Si no, se le seguirá pidiendo más números.
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		int num;
+		
+		do{
+			
+			System.out.println("Di un número entre 1 y 5");
+			num = entrada.nextInt();
+		}while(num != 3);
+		
+	}
+
+}

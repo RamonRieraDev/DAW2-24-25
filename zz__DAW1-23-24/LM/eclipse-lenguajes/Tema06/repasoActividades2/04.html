@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04</title>
+    <style>
+        #casillaColor {
+            height: 100px;
+            width: 200px;
+            border: 3px solid orange;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Seleccionar un color</h1>
+
+    <p>Elije un color, y se aplicará al rectángulo de abajo:</p>
+
+    <select name="color" id="color" onchange="cambiarColor(this)">
+        <option value="green">Verde</option>
+        <option value="purple">Púrpura</option>
+        <option value="yellow">Amarillo</option>
+        <option value="red">Rojo</option>
+        <option value="blue">Azul</option>
+    </select>
+
+    <br><br>
+
+    <div id="casillaColor"></div>
+
+    <script>
+        "use strict"
+        
+        let casillaColor = document.getElementById("casillaColor");
+
+        function cambiarColor(x){
+            casillaColor.style.backgroundColor=x.value;
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Ejemplo 13</title>
+</head>
+
+<body>
+    <script>
+        "use strict"
+
+        let textoJSON = '{"jugador": "charlie", "avatar": "guerrero", "armas": [{ "tipo": "armadura", "nivel": 3 }, {"tipo": "espada","nivel": 7}, { "tipo": "escudo", "nivel": 4 }], "vida": 6}';
+
+        console.log(textoJSON);
+
+        let jugador = JSON.parse(textoJSON);
+
+        console.log(jugador);
+
+        console.log("Avatar: " + jugador.avatar);
+
+        console.log("Vida: " + jugador.vida);
+
+        console.log("Armas: " + jugador.armas[2].tipo);
+
+        console.log("Listado de armas: ");
+        for (let arma of jugador.armas) {
+            alert(arma.tipo + " (" + arma.nivel + ")");
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+package practica3A;
+
+import java.util.Scanner;
+
+public class Consola {
+
+	static private Scanner entrada = new Scanner(System.in);
+
+	static public int leerInt(String mensajeError) {
+		
+		System.out.println("Escribe tu edad:");
+		int numero = entrada.nextInt();
+		
+		while (!entrada.hasNextInt()) {
+			
+			if (!entrada.hasNextInt()) {
+				System.out.println(mensajeError);
+				System.out.println("Escribe tu edad:");
+				numero = entrada.nextInt();
+				continue;
+			} 
+			return numero;
+		}
+
+	}
+
+//	public int leerInt() {
+//		System.out.println("Escribe tu edad:");
+//		numero = entrada.nextInt();
+//		if (!entrada.hasNextInt()) {
+//			return System.out.println("Entrada incorrecta: se esperaba un número entero.");
+//		} else {
+//			return numero;
+//		}
+//	}
+
+}

@@ -1,0 +1,25 @@
+package ejemplos;
+
+
+public class Ejemplo03 {
+
+	public static void main(String[] args) {
+
+		String url = "jdbc:mysql://192.168.3.13/inversiones";
+		String usuario = "java";
+		String password = "Ageofempires2";
+
+	}
+	
+	private static void addEmpresas() {
+		
+		String [][] empresas = {
+				{"1", "Navantia", "2005", },
+				{"2", "Red Eléctrica Española", "1985"},
+				{"3", "Indra", "1992"}
+		};
+		
+		
+	}
+
+}

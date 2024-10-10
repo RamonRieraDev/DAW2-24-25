@@ -1,0 +1,29 @@
+{
+    "biblioteca": {
+        "socios": [
+            {
+                "nombre": "Isabel",
+                "apellidos": "Martínez Chicote",
+                "edad": 40,
+                "telefono": "555 891100",
+                "dni": "imartinez23@gmail.com"
+            },
+            {
+                "nombre": "Isabel",
+                "apellidos": "Martínez Chicote",
+                "edad": 40,
+                "telefono": "555 891100",
+                "dni": "imartinez23@gmail.com"
+            },
+            {
+                "nombre": "Isabel",
+                "apellidos": "Martínez Chicote",
+                "edad": 40,
+                "telefono": "555 891100",
+                "dni": "imartinez23@gmail.com"
+            }
+        ]
+    },
+    "direccion": "calle bla",
+    "director": "Ramon Riera"
+}

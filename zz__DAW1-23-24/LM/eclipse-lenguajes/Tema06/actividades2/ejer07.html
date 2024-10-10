@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+    <style>
+        input {
+            display: block;
+            margin-bottom: 20px;
+            width: 300px;
+        }
+
+        img {
+            width: 300px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Control de transparencia</h1>
+
+    <p>Mueve el deslizador para cambiar la transparencia de la foto.</p>
+
+    <input type="range" id="slider" min="0" max="100" value="90" oninput="transparencia()">
+
+    <img src="../imgs/arquitectura/dil-5OOfwgaiUN8-unsplash.jpg" alt="Edificio" id="image">
+
+    <script>
+        const slider = document.getElementById('slider');
+        const image = document.getElementById('image');
+
+        function transparencia() {
+            image.style.opacity = slider.value / 100;
+        };
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;notas.txt&apos; to &apos;ficheros&apos;&#x0A;- Original project: &apos;Tema8&apos;&#x0A;- Destination element: &apos;ficheros&apos;&#x0A;- Original element: &apos;notas.txt&apos;" description="Copy file" element1="ficheros/notas.txt" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1714051750986" target="/Tema8/ficheros" units="0" version="1.0"/>
+</session>

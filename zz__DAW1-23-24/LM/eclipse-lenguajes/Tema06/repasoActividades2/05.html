@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04</title>
+    <style>
+        #cuadrados {
+            border: 3px solid green;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        #cuadrado_1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            display: inline-block;
+            border-radius: 10px;
+        }
+
+        #cuadrado_2 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            display: inline-block;
+            border-radius: 10px;
+        }
+
+        #cuadrado_3 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            display: inline-block;
+            border-radius: 10px;
+        }
+
+        #cuadrado_4 {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            display: inline-block;
+            border-radius: 10px;
+        }
+
+        #cuadrado_5 {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            display: inline-block;
+            border-radius: 10px;
+        }
+
+        #reset {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: white;
+            display: inline-block;
+            border-radius: 10px;
+            border: 5px solid red;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ocultar divs</h1>
+
+    <p>Haz clic en los siguientes cuadrados para hacerlos desaparecer</p>
+
+    <div id="cuadrados">
+        <div id="cuadrado_1"></div>
+        <div id="cuadrado_2"></div>
+        <div id="cuadrado_3"></div>
+        <div id="cuadrado_4"></div>
+        <div id="cuadrado_5"></div>
+    </div>
+
+    <div id="divReset">
+        <div id="reset">
+            <p><br>RESET</p>
+        </div>
+    </div>
+
+    <script>
+        "use strict"
+
+        let cuadros = document.querySelectorAll('#cuadrados > div');
+
+        for (let div of cuadros) {
+            div.addEventListener('click', function () {
+                this.style.display = 'none';
+            })
+        };
+
+
+
+        let c1 = document.getElementById("cuadrado_1");
+        let c2 = document.getElementById("cuadrado_2");
+        let c3 = document.getElementById("cuadrado_3");
+        let c4 = document.getElementById("cuadrado_4");
+        let c5 = document.getElementById("cuadrado_5");
+         let btnReset = document.getElementById("reset");
+
+        c1.addEventListener('click', desaparecer_1);
+        c2.addEventListener('click', desaparecer_2);
+        c3.addEventListener('click', desaparecer_3);
+        c4.addEventListener('click', desaparecer_4);
+        c5.addEventListener('click', desaparecer_5);
+         btnReset.addEventListener('click', reset);
+
+        // function desaparecer_1(){
+        //     c1.style.display="none";
+        // }
+
+        // function desaparecer_2(){
+        //     c2.style.display="none";
+        // }
+
+        // function desaparecer_3(){
+        //     c3.style.display="none";
+        // }
+
+        // function desaparecer_4(){
+        //     c4.style.display="none";
+        // }
+
+        // function desaparecer_5(){
+        //     c5.style.display="none";
+        // }
+
+        function reset(){
+            c1.style.display="inline-block";
+            c2.style.display="inline-block";
+            c3.style.display="inline-block";
+            c4.style.display="inline-block";
+            c5.style.display="inline-block";
+        }
+
+    </script>
+</body>
+
+</html>

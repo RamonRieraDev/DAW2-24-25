@@ -1,0 +1,24 @@
+<profesor>
+	<!-- Nombre del profesor -->
+	<nombre edad="45">Carlos</nombre>
+	
+	<!-- Materias que imparte el profesor -->
+	<materia>
+		<nombre>Programación</nombre>
+		<codigo>250</codigo>
+	</materia>
+	<materia>
+		<nombre>Lenguajes de marcas</nombre>
+		<codigo>310</codigo>
+	</materia>
+	
+	<!-- Contenido mixto (texto y, además, etiquetas -->
+	<otros>
+		Permanece en el centro de 15:10 a 21:00.
+		<tutoria>Lunes 15:10</tutoria>
+	</otros>
+	
+	<!-- Elemento vacío. Indica que el profesor es tutor -->
+	<tutor/>
+	
+</profesor>

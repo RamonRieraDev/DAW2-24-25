@@ -1,0 +1,12 @@
+{
+    "familia":{
+        "padre": "pedro",
+        "madre": "maria",
+        "hijos": [
+            "jesus",
+            "juan"
+        ],
+        "primos": "abundio",
+        "tios": "abelarda"
+    }
+}

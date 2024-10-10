@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE pacientes SYSTEM "ejer5.dtd">
+
+<pacientes>
+	<paciente>
+		<nombre>Sofía Ruiz</nombre>
+		<dni>29921001H</dni>
+	</paciente>
+	<paciente>
+		<nombre>Manuel Campos</nombre>
+		<num_seg_social>88399110J</num_seg_social>
+	</paciente>
+</pacientes>

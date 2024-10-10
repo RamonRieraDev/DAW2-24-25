@@ -1,0 +1,7 @@
+<!ELEMENT cine (peliculas, generos)>
+<!ELEMENT peliculas (pelicula)>
+<!ELEMENT pelicula (titulo, director, protagonistas)>
+<!ELEMENT titulo ANY>
+<!ELEMENT director ANY>
+<!ELEMENT protagonistas (actor, actriz)>
+<!ELEMENT generos (genero)>

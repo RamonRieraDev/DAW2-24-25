@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<lista>
+	<cancion>
+		<artista>Adele</artista>
+		<titulo>Rolling in the deep</titulo>
+		<duracion>180s</duracion>
+		<estilo>pop</estilo>
+		<puntuacion>1</puntuacion>
+		<inicio>12</inicio>
+		<fin>172</fin>
+		<corte>fade in</corte>
+	</cancion>
+	
+	<cancion> 
+		<artista>REM</artista>
+		<titulo>Losing my religion</titulo>
+		<duracion>240</duracion>
+		<estilo>pop</estilo>
+		<puntuacion>2</puntuacion>
+		<inicio>0</inicio>
+		<fin>178</fin>
+		<corte>cut</corte>
+	</cancion>
+	
+	<cancion>
+		<artista>Calvin Harris</artista>
+		<titulo>How deep is your love</titulo>
+		<duracion>240</duracion>
+		<estilo>dance</estilo>
+		<puntuacion>4</puntuacion>
+		<inicio>16</inicio>
+		<fin>222</fin>
+		<corte>fade out</corte>
+	</cancion>
+</lista>

@@ -1,0 +1,29 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+h1, h2{
+    color: palevioletred;
+}
+.small_img{
+    width: 200px;
+}
+.big_img{
+    width: 400px;
+}
+li{
+    list-style-type: square;
+}
+table, th, td{
+    text-align: center;
+    padding: 5px 20px;
+    border-collapse: collapse;
+    border: grey 1px solid;
+}
+th{
+    background-color: palevioletred;
+    color: white;
+}
+tr:nth-child(even){
+    background-color: turquoise;
+}

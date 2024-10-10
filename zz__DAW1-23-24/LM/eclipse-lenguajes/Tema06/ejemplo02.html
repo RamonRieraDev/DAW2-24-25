@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 02</title>
+</head>
+<body>
+    <h1>El DOM</h1>
+
+    <h2 id="encabezado">Encabezado temporal</h2>
+
+    <p>Este es el párrafo 1</p>
+
+    <p>Este es el párrafo 2</p>
+
+    <p>Este es el párrafo 3</p>
+
+    <script>
+        "use strict"
+
+        // Para modificar un elemento con identificador asignándolo a una variable:
+        let encabezado =  document.getElementById("encabezado").innerHTML = "Modificamos este h2 dese javaScript";
+
+        // Para modificar cualquier etiqueta asignádola a una variable.
+        // Seleccionamos todos los párrafos obteniendo un array de elementos "p":
+        let parrafos = document.getElementsByTagName("p");
+        // // Recorremos el array y cambiamos el contenido de cada párrafo:
+        // for(let parrafo of parrafos){
+        //     parrafo.innerHTML = "Nuevo contenido";
+        // }
+        // Para cambiar solo un párrafo:
+        parrafos[0].innerHTML = "Nuevo Párrafo primero";
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+    <style>
+        label {
+            display: block;
+        }
+
+        input[type="text"] {
+            width: 150px;
+        }
+
+        select {
+            width: 300px;
+            display: block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Añadir elementos a un select</h1>
+
+    <p>Escribe un hobby que tengas.</p>
+
+    <form action="">
+
+        <label for="hobby">Hobby:</label>
+        <input type="text" id="hobby">
+
+        <input type="button" value="Añadir" onclick="addHobby()">
+
+        <select name="hobbies" id="hobbyList" size="6">
+            <option value="placeholder" disabled>(Aún no has puesto ninguno)</option>
+        </select>
+
+    </form>
+
+    <script>
+
+        // He sudado con este ejercicio... 
+        function addHobby() {
+            hobbyInput = document.getElementById('hobby');
+            hobbyList = document.getElementById('hobbyList');
+            hobbyValue = hobbyInput.value;
+
+            if (hobbyValue !== "") {
+                // Quito el "(Aún no has puesto ninguno)" y lo dejo vacío.
+                if (hobbyList.options[0].value == "placeholder") {
+                    hobbyList.innerHTML = "";
+                }
+
+                // Creo otro elemento 'option' dentro de 'hobby' para poder poner más hobbies.
+                newOption = document.createElement('option');
+                newOption.text = hobbyValue;
+                 // Añado a la lista este elemento.
+                hobbyList.add(newOption);
+                // Y vacío el hobbyInput para el próximo elemento.
+                hobbyInput.value = "";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

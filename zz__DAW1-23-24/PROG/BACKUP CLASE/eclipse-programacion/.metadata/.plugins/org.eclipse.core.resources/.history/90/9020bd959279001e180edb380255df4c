@@ -1,0 +1,28 @@
+package hoja02;
+
+import java.util.Scanner;
+
+public class Ejer15 {
+
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("ingrese un número: ");
+		int exponente = entrada.nextInt();
+		
+		int valorPotencia = 0;
+		int resultado = 0;
+		
+		
+		do {
+			
+			exponente * exponente = resultado;
+			System.out.println("El resultado es: " + resultado);
+			
+			
+		}while(resultado <= 12000);
+
+	}
+
+}

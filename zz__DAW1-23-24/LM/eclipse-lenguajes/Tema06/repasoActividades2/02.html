@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02</title>
+    <style>
+        button{
+            width: 200px;
+            height: 40px;
+            margin-right: 20px;
+        }
+
+        #wp{
+            background-color: aqua;
+            border: 1px solid rgb(47, 168, 193);
+        }
+
+        #gp{
+            background-color: greenyellow;
+            border: 1px solid rgb(82, 224, 64);
+        }
+
+        #cr{
+            background-color: rgb(220, 132, 132);
+            border: 1px solid rgb(240, 123, 123);
+        }
+
+        #go{
+            background-color: rgb(229, 217, 102);
+            border: 1px solid rgb(243, 247, 18);
+            text-decoration: none;
+            color: black;
+            display: inline-block;
+            padding: 15px 70px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Elegir destino del enlace</h1>
+
+    <p>Pulsa uno de estos tres colores para elegir el destino del link que aprece más abajo.</p>
+
+    <button id="wp">Wikipedia</button>
+
+    <button id="gp">GreenPeace</button>
+
+    <button id="cr">Cruz Roja</button>
+
+    <p>Pulsa el siguiente link para dirigirte a la web elegida:</p>
+
+    <a id="go" href="https://es.wikipedia.org/wiki/Wikipedia:Portada" target="_blank">Ir a Wikipedia</a>
+
+
+    <script>
+        "use strict"
+
+        let wp = document.getElementById("wp");
+        let gp = document.getElementById("gp");
+        let cr = document.getElementById("cr");
+        let go = document.getElementById("go");
+
+        wp.addEventListener('click', linkWp);
+        gp.addEventListener('click', linkGp);
+        cr.addEventListener('click', linkCr);
+
+        function linkWp(){
+            go.innerText="Wikipedia";
+            go.href="https://es.wikipedia.org/wiki/Wikipedia:Portada";
+            go.style.backgroundColor="aqua";
+            go.style.border="1px solid rgb(47, 168, 193)";
+        }
+
+        function linkGp(){
+            go.innerText="GreenPeace";
+            go.href="https://es.greenpeace.org/es/";
+            go.style.backgroundColor="greenyellow";
+            go.style.border="1px solid rgb(82, 224, 64)";
+        }
+
+        function linkCr(){
+            go.innerText="Cruz Roja";
+            go.href="https://www2.cruzroja.es/";
+            go.style.backgroundColor="rgb(220, 132, 132)";
+            go.style.border="1px solid rgb(240, 123, 123";
+            
+            
+        }
+    </script>
+</body>
+</html>

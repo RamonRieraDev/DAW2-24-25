@@ -1,0 +1,16 @@
+<!ELEMENT hotel (nombre, direccion, tel, fax, web, reserva*)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT tel (#PCDATA)>
+<!ELEMENT fax (#PCDATA)>
+<!ELEMENT web (#PCDATA)>
+<!ELEMENT reserva (pension_completa | cliente)*>
+	<!ATTLIST reserva fecha_entrada NMTOKEN #REQUIRED>
+	<!ATTLIST reserva fecha_salida NMTOKEN #IMPLIED>
+	
+<!ELEMENT pension_completa EMPTY>
+<!ELEMENT cliente (nombre, apellidos, edad)>
+	<!ATTLIST cliente dni ID #REQUIRED>
+
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>

@@ -1,0 +1,11 @@
+package hoja02;
+
+import java.util.Scanner;
+
+public class Ejer25 {
+
+	Scanner entrada = new Scanner(System.in);
+	
+	
+	
+}

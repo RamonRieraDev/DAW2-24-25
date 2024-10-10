@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Weather Map</title>
+</head>
+
+<body>
+    <h1>Open Weather Map</h1>
+
+    <h2>El tiempo en <span id="ciudad"></span></h2>
+
+    <p>Temperatura: <span id="temperatura"></span> ºC</p>
+
+    <p>Salida del sol: <span id="salidaSol"></span></p>
+
+    <p>Puesta del sol: <span id="puestaSol"></span></p>
+
+    <p>Presión: <span id="presion"> </span> milibares.</p>
+
+    <p>Humedad: <span id="humedad"></span> %.</p>
+
+    <script>
+        "use strict"
+
+        tiempo("alicante");
+
+        function tiempo(localizacion) {
+
+            let url = "https://api.openweathermap.org/data/2.5/weather?q=" + localizacion + "&appid=7dcc6bb908fc23a49ee9184422cc7cfd&units=metric";
+
+            fetch(url)
+                .then(function (respuesta) {
+                    return respuesta.json();
+                })
+                .then(function (respuestaJSON) {
+                    let ciudad = respuestaJSON.name;
+
+                    let temperatura = respuestaJSON.main.temp;
+
+                    let salidaSol = respuestaJSON.sys.sunrise;
+
+                    let puestaSol = respuestaJSON.sys.sunset;
+
+                    let presion = respuestaJSON.main.pressure;
+
+                    let humedad = respuestaJSON.main.humidity;
+
+                    console.log(`Ciudad: ${ciudad}`);
+                    document.getElementById("ciudad").innerHTML = ciudad;
+
+                    console.log(`Temperatura: ${temperatura}ºC`);
+                    document.getElementById("temperatura").innerHTML = temperatura;
+                    document.getElementById("temperatura").style.color = temperaturaColor(temperatura);
+
+                    console.log(`Amanecer: ${formateoHora(salidaSol)}`);
+                    document.getElementById("salidaSol").innerHTML = formateoHora(salidaSol);
+
+                    console.log(`Anochecer: ${formateoHora(puestaSol)}`);
+                    document.getElementById("puestaSol").innerHTML = formateoHora(puestaSol);
+
+                    console.log(`Presion: ${presion} milibares`);
+                    document.getElementById("presion").innerHTML = presion;
+
+                    console.log(`Humedad: ${humedad} %`);
+                    document.getElementById("humedad").innerHTML = humedad;
+                })
+                .catch(function () {
+                    console.log("Error en la petición de datos.");
+                });
+        }
+        // function epochAFecha(epoch){
+        //     let tiempo = new Date(epoch * 1000);
+        //     return tiempo.getHours() + ":" + tiempo.getMinutes();
+        // }
+
+        function formateoHora(hora) {
+            let tiempo = new Date(hora * 1000);
+            if (tiempo.getMinutes() < 10) {
+                return tiempo.getHours() + ":0" + tiempo.getMinutes();
+            } else {
+                return tiempo.getHours() + ":" + tiempo.getMinutes();
+            }
+        }
+
+        function temperaturaColor(temperatura) {
+            if (temperatura >= 18) {
+                return "rgb(255, 0, 0)";
+            } else {
+                return "rgb(0, 0, 255)";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

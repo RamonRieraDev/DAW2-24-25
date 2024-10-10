@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACtividad 03</title>
+    <style>
+        .formato{
+            text-align: center;
+            width: 600px;
+            margin: auto;
+            font-size: 1.2rem;
+            font-family: Arial, Helvetica, sans-serif;
+            color: salmon;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aplicar una clase a un elemento</h1>
+
+    <p>Haz clic en el siguiente párrafo para centrarlo y cambiarle la fuente:</p>
+
+    <p class="parrafo_1" onmouseover="formato(this)" onmouseout="sinFormato(this)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, impedit quisquam! Perspiciatis natus, laboriosam dolorem esse architecto dolorum ducimus ut voluptates ratione itaque voluptatum atque non odit. Eveniet, totam nisi velit est necessitatibus consectetur voluptate debitis cum laborum voluptatibus accusamus eligendi dolorem quo officia nesciunt quisquam. Quae necessitatibus maiores deserunt?</p>
+
+    <script>
+        "use strict"
+
+        function formato(parrafo_1) {
+            parrafo_1.className = "formato";
+        }
+
+        function sinFormato(parrafo_1) {
+            parrafo_1.className = "";
+        }
+
+    </script>
+
+</body>
+
+</html>

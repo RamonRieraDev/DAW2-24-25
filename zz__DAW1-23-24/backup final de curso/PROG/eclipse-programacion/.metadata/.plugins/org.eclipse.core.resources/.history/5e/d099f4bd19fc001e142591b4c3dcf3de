@@ -1,0 +1,33 @@
+package ejemplos;
+
+import java.io.BufferedReader;
+import java.io.File;
+
+public class Ejemplo07TransformarArchivo {
+
+	public static void main(String[] args) {
+		
+		final String NOMBRE_ARCHIVO_ORIGINAL = "ficheros/nombres.txt";
+		
+		final String NOMBRE_ARCHIVO_TEMPORAL = "ficheros/nombres.tmp";
+		
+		// Abrir el archivo original para lectura.
+		 
+		
+		// Abrir el archivo temporal para escritura.
+		
+		// Bucle:
+		//  - Leer la primera línea del original.
+		
+		//  - Pasamos la línea a mayúsculas.
+		
+		//  - Escribir la línea en el archivo temporal.
+		
+		// Cerrar los buffers.
+		
+		// Eliminar el archivo original.
+		
+		// Renombrar el archivo temporal para que se llame como el temporal. 
+	}
+	
+}

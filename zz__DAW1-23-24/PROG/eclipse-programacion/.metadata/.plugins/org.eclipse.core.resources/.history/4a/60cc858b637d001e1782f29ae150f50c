@@ -1,0 +1,27 @@
+package hoja02;
+
+import java.util.Scanner;
+
+public class Ejer16 {
+
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Adivina el número: ");
+		int num;
+		num = entrada.nextInt();
+		
+		int contador = 1;
+		do {
+		
+		double numAle = (int)(10 * Math.random() + 1);
+		
+		
+		System.out.println("Fallaste!");
+		}while(num != numAle || contador >= 3);
+		
+		
+	}
+
+}
