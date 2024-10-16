@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Introduction</title>
+</head>
+<body>
+    <p id="demo">JavaScript can change HTML content.</p>
+
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello, JavaScript."'>CLik Me!</button>
+
+    <p>The bulb:</p>
+
+    <button onclick='document.getElementById("bulb").src="images/bulbon.jpg"'>Turn on the light</button>
+
+    <img id="bulb" src="images/bulboff.jpg" alt="bulboff" style="height:200px">
+
+    <button onclick='document.getElementById("bulb").src="images/bulboff.jpg"'>Turn off the light</button>
+
+
+</body>
+</html>
