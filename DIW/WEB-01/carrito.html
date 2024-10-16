@@ -20,10 +20,18 @@
     <section id="carrito">
       <h2>Carrito</h2>
       <ul id="lista-carrito">
-        <!-- Productos del carrito se agregarán aquí dinámicamente -->
+        <!-- Los productos del carrito se mostrarán aquí dinámicamente -->
       </ul>
+      <div id="total-carrito">
+        <!-- El total del carrito se mostrará aquí -->
+      </div>
     </section>
   </main>
-  <script src="carrito.js"></script> <!-- Archivo JS solo para el carrito -->
+  <script src="app.js"></script>
+  <script>
+    // Mostrar el carrito y el total al cargar la página
+    mostrarCarrito();
+    actualizarTotal();
+  </script>
 </body>
 </html>
