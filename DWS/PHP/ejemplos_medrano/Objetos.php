@@ -46,7 +46,7 @@ class coche {
     }
 
     public function mostrarMarca() : string {
-        return "El producto ".$this->marca." es el número ".self::$numCoches;
+        return "El producto ".$this->marca." es el número ". self::$numCoches;
     }
 }
 
