@@ -25,8 +25,9 @@ Sample Output:
 echo "<b>Actividad 01</b>";
 echo "<br>";
 
-function suma($na, $nb){
-    if($na == $nb){
+function suma($na, $nb)
+{
+    if ($na == $nb) {
         return ($na + $nb) * 3;
     }
     return $na + $nb;
@@ -60,7 +61,7 @@ function test($n)
     if ($n > 51) {
         $resultado = ($n - 51) * 3;
     } else {
-    $resultado = 51 - $n;
+        $resultado = 51 - $n;
     }
     return $resultado;
 }
@@ -90,13 +91,13 @@ There will be no hyphen(-) at starting and ending position.
 */
 echo "<b>Actividad 01</b>";
 echo "<br>";
-for ($i = 0; $i <= 10; $i++){
-    if($i == 10){
+for ($i = 0; $i <= 10; $i++) {
+    if ($i == 10) {
         echo "$i";
-    } else{
+    } else {
         echo "$i-";
     }
-} 
+}
 echo "<br>";
 /*
 2. Create a script using a for loop to add all the integers between 0 and 30 
@@ -106,7 +107,7 @@ echo "<br>";
 echo "<b>Actividad 02</b>";
 echo "<br>";
 $total = 0;
-for ($i = 0; $i <= 30; $i++){
+for ($i = 0; $i <= 30; $i++) {
     $total += $i;
     echo "$i, ";
 }
@@ -138,10 +139,7 @@ $color = ["white", "green", "red"];
 
 sort($color);
 
-foreach ($color as $colors){
+foreach ($color as $colors) {
     echo "<li>$colors</li>";
 }
 echo "<br>";
-
-
-
