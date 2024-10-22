@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 03</title>
+</head>
+<body>
+    <h2>Activitat 03</h2>
+
+    <p id="enunciat">
+        Fes un formulari amb dos “input” per introduir els coeficients d’una equació de
+        primer grau. En clicar un botó s’ha de mostrar per pantalla el seu resultat.
+    </p>
+
+    <p id="demo">
+        <input id="num1" type="num1"> X+
+        <input id="num2" type="num2"> = 0 
+        <p id="resultat_parrafo">
+            <div id="resultat"></div>
+        </p>
+        <button id="calcular" type="button" onclick="ecuacio()">Calcular</button>
+    </p>
+
+    <script>
+        function ecuacio(){
+            let num1 = document.getElementById("num1").value
+            let num2 = document.getElementById("num2").value
+            let resultat = -num2 / num1
+
+            document.getElementById("resultat").innerHTML = "Resultat: " + resultat
+        }
+    </script>
+</body>
+</html>

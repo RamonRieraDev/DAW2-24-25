@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activitat 04</title>
+  </head>
+  <body>
+    <h2>Activitat 04</h2>
+
+    <p id="enunciat">
+      Fes una funció a la que passes el radi d'un cercle i retorna la longitud i
+      l’àrea del mateix. Mostra per pantalla el resultat.
+    </p>
+
+    <p id="demo">
+        <input id="radi" type="radi">
+        <button id="calcular" type="button" onclick="calcular()">Submit</button>
+        <p id="resultat"></p>
+    </p>
+
+    <script>
+        function calcular(){
+            let pi = 3.1416
+            let radi = document.getElementById("radi").value;
+            let longitud = 2 * pi * radi;
+            let area = pi * radi * radi;
+            document.getElementById("resultat").innerHTML = "L'àrea és " + area + " i la longitud " + longitud 
+        }
+    </script>
+  </body>
+</html>

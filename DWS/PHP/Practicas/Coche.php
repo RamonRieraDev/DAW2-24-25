@@ -1,6 +1,7 @@
 <?php
 // Declarar clase
-class coche{
+class coche
+{
     private string $marca;
     private string $modelo;
     private int $anyo;
@@ -8,88 +9,100 @@ class coche{
     private static int $numCoches = 0;
     private static array $arrayCoches = [];
 
-// Constructor
-public function __construct(
-    string $marca,
-    string $modelo,
-    int $anyo,
-    float $veloActual = 0.0,
-    // array $arrayCoches = []
-){
-    $this->marca = $marca;
-    $this->modelo = $modelo;
-    $this->anyo = $anyo;
-    $this->veloActual = $veloActual;
-    self::$numCoches++;
-    self::$arrayCoches[] = $this;
-}
+    // Constructor
+    public function __construct(
+        string $marca,
+        string $modelo,
+        int $anyo,
+        float $veloActual = 0.0,
+        // array $arrayCoches = []
+    ) {
+        $this->marca = $marca;
+        $this->modelo = $modelo;
+        $this->anyo = $anyo;
+        $this->veloActual = $veloActual;
+        self::$numCoches++;
+        self::$arrayCoches[] = $this;
+    }
 
-// Setters
-public function setMarca(string $marca){
-    $this->marca = $marca;
-}
+    // Setters
+    public function setMarca(string $marca)
+    {
+        $this->marca = $marca;
+    }
 
-public function setModelo(string $modelo){
-    $this->modelo = $modelo;
-}
+    public function setModelo(string $modelo)
+    {
+        $this->modelo = $modelo;
+    }
 
-public function setAnyo(int $anyo){
-    $this->anyo = $anyo;
-}
+    public function setAnyo(int $anyo)
+    {
+        $this->anyo = $anyo;
+    }
 
-public function setVeloActual(float $veloActual){
-    $this->veloActual = $veloActual;
-}
+    public function setVeloActual(float $veloActual)
+    {
+        $this->veloActual = $veloActual;
+    }
 
-// Getters
-public function getMarca() : string {
-    return $this->marca;
-}
+    // Getters
+    public function getMarca(): string
+    {
+        return $this->marca;
+    }
 
-public function getModelo() : string {
-    return $this->modelo;
-}
+    public function getModelo(): string
+    {
+        return $this->modelo;
+    }
 
-public function getAnyo() : int {
-    return $this->anyo;
-}
+    public function getAnyo(): int
+    {
+        return $this->anyo;
+    }
 
-public function getVeloActual() : float {
-    return $this->veloActual;
-}
+    public function getVeloActual(): float
+    {
+        return $this->veloActual;
+    }
 
-public static function getNumCoches() : int {
-    return self::$numCoches;
-}
+    public static function getNumCoches(): int
+    {
+        return self::$numCoches;
+    }
 
-public static function getArrayCoches() : array {
-    return self::$arrayCoches;
-}
+    public static function getArrayCoches(): array
+    {
+        return self::$arrayCoches;
+    }
 
-// Método detalles
-public function detalles(){
-    return "Marca: $this->marca," . "<br>" . 
-    "Modelo: $this->modelo," . "<br>" . 
-    "Año: $this->anyo," . "<br>" .
-    "Velocidad Actual: $this->veloActual km/h" . "<br>";
-}
+    // Método detalles
+    public function detalles()
+    {
+        return "Marca: $this->marca," . "<br>" .
+            "Modelo: $this->modelo," . "<br>" .
+            "Año: $this->anyo," . "<br>" .
+            "Velocidad Actual: $this->veloActual km/h" . "<br>";
+    }
 
-// Método acelerar
-public function acelerar(float $incremento){
-    $this->veloActual += $incremento;
-}
+    // Método acelerar
+    public function acelerar(float $incremento)
+    {
+        $this->veloActual += $incremento;
+    }
 
-// Método frenar
-public function frenar(float $decremento){
-    $this->veloActual -= $decremento;
-}
+    // Método frenar
+    public function frenar(float $decremento)
+    {
+        $this->veloActual -= $decremento;
+    }
 
-// Método contar coches
-public static function contCoche(): int{
-    return self::$numCoches++;
-}
-
-
+    // Método contar coches
+    public static function contCoche(): int
+    {
+        return self::$numCoches++;
+    }
 }
 
 // Declarar coche0
@@ -105,7 +118,7 @@ $coche0 = new coche(
 
 // $coche1->acelerar(25);
 // echo "Velocidad al acelerar: <br>" . $coche1->detalles() . "<br>";
- 
+
 // $coche1->frenar(25);
 // echo "Velocidad al frenar: <br>" . $coche1->detalles() . "<br>";
 
@@ -146,4 +159,3 @@ echo "Total de coches: " . coche::getNumCoches() . "<br>";
 foreach (coche::getArrayCoches() as $coche) {
     echo $coche->detalles() . "<br>";
 }
-?>
