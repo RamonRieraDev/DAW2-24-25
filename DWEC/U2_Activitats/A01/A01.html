@@ -23,12 +23,14 @@
       descarregar les imatges o emprar alguna icona del sistema.
     </p>
     <p id="demo">Fes clic a la imatge per obrir i tancar el sobre</p>
+    <!--Para hacer click en la imagen y que cambie solo una vez-->
     <!-- <img id="sobre" src="icons/envelope-close.svg" alt="sobre cerrado" onclick='document.getElementById("sobre").src="icons/envelope-open.svg"'> -->
     <button type="button" onclick="sobre()">
       <img id="sobres" src="icons/envelope-close.svg" alt="sobre cerrado" />
     </button>
 
     <script>
+      // Para hacer click en la imagen y que cambie a la otra imagen todas las veces que se hace click
       function sobre() {
         let img = document.getElementById("sobres");
         if (img.src.includes("icons/envelope-close.svg")) {
