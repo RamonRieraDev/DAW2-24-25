@@ -103,4 +103,8 @@ console.log(tecnologia)
 tecnologia.push(50)
 tecnologia[10] = '4K'
 
+import { sumar } from "./funciones"
 
+resultado = sumar(2,3)
+
+console.log(resultado)
