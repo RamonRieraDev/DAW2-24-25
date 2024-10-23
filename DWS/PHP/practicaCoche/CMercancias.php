@@ -1,13 +1,15 @@
 <?php
-
+// Incluir la clase padre
 include 'Coche.php';
 
+// Declarar la clase hija
 class CMercancias extends coche
 {
-
+    // Propiedades
     public int $cargaMax;
     public int $cargaActual;
 
+    // Constructor
     public function __construct(
         string $marca,
         string $modelo,
@@ -76,6 +78,7 @@ class CMercancias extends coche
     }
 }
 
+// Crear objeto CM1
 $CM1 = new CMercancias(
     "Ford",
     "Custom",
@@ -85,6 +88,7 @@ $CM1 = new CMercancias(
     400
 );
 
+// Llamada a las funciones
 $CM1->detalles();
 $CM1->cargaDescarga(-100);
 $CM1->mostrarCargaActual();

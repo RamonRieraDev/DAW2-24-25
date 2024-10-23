@@ -1,13 +1,15 @@
 <?php
-
+// Incluir la clase padre
 include 'Coche.php';
 
+// Declarar la clase hija
 class CPersonas extends coche
 {
-
+    // Propiedades
     public int $pasajerosMax;
     public int $pasajerosActual;
 
+    // Constructor
     public function __construct(
         string $marca,
         string $modelo,
@@ -76,6 +78,7 @@ class CPersonas extends coche
     }
 }
 
+// Crear objeto CP1
 $CP1 = new CPersonas(
     "Scania",
     "r450",
@@ -85,6 +88,7 @@ $CP1 = new CPersonas(
     20
 );
 
+// Llamada a las funciones
 $CP1->detalles();
 $CP1->subenBajanPasajeros(10);
 $CP1->mostrarPasajeActual();
