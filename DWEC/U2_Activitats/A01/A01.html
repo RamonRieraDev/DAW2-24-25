@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activitat 01</title>
+    <style>
+      img {
+        width: 50px;
+      }
+
+      button {
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Activitat 01</h2>
+    <p id="enunciat">
+      Crea una pàgina on al fer clic sobre una foto mostri un sobre tancat i un
+      sobre obert. PISTA: A JS Introduction teniu exemple similar. Podeu
+      descarregar les imatges o emprar alguna icona del sistema.
+    </p>
+    <p id="demo">Fes clic a la imatge per obrir i tancar el sobre</p>
+    <!-- <img id="sobre" src="icons/envelope-close.svg" alt="sobre cerrado" onclick='document.getElementById("sobre").src="icons/envelope-open.svg"'> -->
+    <button type="button" onclick="sobre()">
+      <img id="sobres" src="icons/envelope-close.svg" alt="sobre cerrado" />
+    </button>
+
+    <script>
+      function sobre() {
+        let img = document.getElementById("sobres");
+        if (img.src.includes("icons/envelope-close.svg")) {
+          img.src = "icons/envelope-open.svg";
+        } else {
+          img.src = "icons/envelope-close.svg";
+        }
+      }
+    </script>
+  </body>
+</html>

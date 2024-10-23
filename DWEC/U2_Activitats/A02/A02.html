@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activitat 02</title>
+  </head>
+  <body>
+    <h2>Activitat 02</h2>
+    <p id="enunciat">
+      Fes un formulari amb un “input” que digui si un nombre està en l’interval
+      [-1, 1]. PISTA: A
+      https://www.w3schools.com/js/tryit.asp?filename=tryjs_validation_number
+      trobaràs un exemple similar.
+    </p>
+
+    <input id="input" />
+    <button type="button" onclick="interval()">Submit</button>
+    <p id="demo"></p>
+
+    <script>
+      function interval() {
+        let x = document.getElementById("input").value;
+        let text;
+        if (isNaN(x) || x < -1 || x > 1) {
+          text = "Valor erroni.";
+        } else {
+          text = "Valor correcte.";
+        }
+        document.getElementById("demo").innerHTML = text;
+      }
+    </script>
+  </body>
+</html>
