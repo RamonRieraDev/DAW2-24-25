@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ramon\\Desktop\\DAW2-24-25\\DWS\\C#\\proyectoPrueba\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{07FD95ED-29C8-4BE1-9C06-DAF23D289545}|proyectoPrueba\\proyectoPrueba.csproj|c:\\users\\ramon\\desktop\\daw2-24-25\\dws\\c#\\proyectoprueba\\proyectoprueba\\helloworld.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07FD95ED-29C8-4BE1-9C06-DAF23D289545}|proyectoPrueba\\proyectoPrueba.csproj|solutionrelative:proyectoprueba\\helloworld.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "helloWorld.cs",
+              "DocumentMoniker": "C:\\Users\\ramon\\Desktop\\DAW2-24-25\\DWS\\C#\\proyectoPrueba\\proyectoPrueba\\helloWorld.cs",
+              "RelativeDocumentMoniker": "proyectoPrueba\\helloWorld.cs",
+              "ToolTip": "C:\\Users\\ramon\\Desktop\\DAW2-24-25\\DWS\\C#\\proyectoPrueba\\proyectoPrueba\\helloWorld.cs",
+              "RelativeToolTip": "proyectoPrueba\\helloWorld.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T16:47:28.473Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

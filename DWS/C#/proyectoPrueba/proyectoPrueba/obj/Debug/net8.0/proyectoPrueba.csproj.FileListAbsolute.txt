@@ -1,0 +1,15 @@
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\proyectoPrueba\proyectoPrueba\bin\Debug\net8.0\proyectoPrueba.exe
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\proyectoPrueba\proyectoPrueba\bin\Debug\net8.0\proyectoPrueba.deps.json
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\proyectoPrueba\proyectoPrueba\bin\Debug\net8.0\proyectoPrueba.runtimeconfig.json
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\proyectoPrueba\proyectoPrueba\bin\Debug\net8.0\proyectoPrueba.dll
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\proyectoPrueba\proyectoPrueba\bin\Debug\net8.0\proyectoPrueba.pdb
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\proyectoPrueba\proyectoPrueba\obj\Debug\net8.0\proyectoPrueba.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\proyectoPrueba\proyectoPrueba\obj\Debug\net8.0\proyectoPrueba.AssemblyInfoInputs.cache
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\proyectoPrueba\proyectoPrueba\obj\Debug\net8.0\proyectoPrueba.AssemblyInfo.cs
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\proyectoPrueba\proyectoPrueba\obj\Debug\net8.0\proyectoPrueba.csproj.CoreCompileInputs.cache
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\proyectoPrueba\proyectoPrueba\obj\Debug\net8.0\proyectoPrueba.sourcelink.json
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\proyectoPrueba\proyectoPrueba\obj\Debug\net8.0\proyectoPrueba.dll
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\proyectoPrueba\proyectoPrueba\obj\Debug\net8.0\refint\proyectoPrueba.dll
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\proyectoPrueba\proyectoPrueba\obj\Debug\net8.0\proyectoPrueba.pdb
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\proyectoPrueba\proyectoPrueba\obj\Debug\net8.0\proyectoPrueba.genruntimeconfig.cache
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\proyectoPrueba\proyectoPrueba\obj\Debug\net8.0\ref\proyectoPrueba.dll

@@ -1,0 +1,15 @@
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\holaMundo2\holaMundo2\bin\Debug\net8.0\holaMundo2.exe
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\holaMundo2\holaMundo2\bin\Debug\net8.0\holaMundo2.deps.json
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\holaMundo2\holaMundo2\bin\Debug\net8.0\holaMundo2.runtimeconfig.json
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\holaMundo2\holaMundo2\bin\Debug\net8.0\holaMundo2.dll
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\holaMundo2\holaMundo2\bin\Debug\net8.0\holaMundo2.pdb
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\holaMundo2\holaMundo2\obj\Debug\net8.0\holaMundo2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\holaMundo2\holaMundo2\obj\Debug\net8.0\holaMundo2.AssemblyInfoInputs.cache
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\holaMundo2\holaMundo2\obj\Debug\net8.0\holaMundo2.AssemblyInfo.cs
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\holaMundo2\holaMundo2\obj\Debug\net8.0\holaMundo2.csproj.CoreCompileInputs.cache
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\holaMundo2\holaMundo2\obj\Debug\net8.0\holaMundo2.sourcelink.json
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\holaMundo2\holaMundo2\obj\Debug\net8.0\holaMundo2.dll
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\holaMundo2\holaMundo2\obj\Debug\net8.0\refint\holaMundo2.dll
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\holaMundo2\holaMundo2\obj\Debug\net8.0\holaMundo2.pdb
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\holaMundo2\holaMundo2\obj\Debug\net8.0\holaMundo2.genruntimeconfig.cache
+C:\Users\ramon\Desktop\DAW2-24-25\DWS\C#\holaMundo2\holaMundo2\obj\Debug\net8.0\ref\holaMundo2.dll
