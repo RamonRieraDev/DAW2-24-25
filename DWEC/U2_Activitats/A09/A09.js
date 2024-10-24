@@ -11,6 +11,14 @@ function separarParaules() {
 
   alert("Hi han " + contador + " paraules");
 
-  alert(text.indexOf(0))
+  alert("La primera paraula és: " + textSplit[0] + " i l'última és: " + textSplit[textSplit.length -1])
+
+  textInvers = ""
+
+  for (i = textSplit.length -1; i < textSplit.length; i--) {
+    textInvers = textInvers + textSplit[i] + " ";
+  }
+
+  alert("El text invers és: " + textInvers)
   // hola que tal hola que tal
 }
